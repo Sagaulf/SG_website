@@ -8826,4 +8826,11 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
     window.jQuery = window.$ = jQuery;
 }
 
+$('select.div-toggler').change(function(){
+    var target = $(this).data('target');
+    $(target).children().addClass('hide');
+    var show = $("option:selected", this).data('show');
+    $(show).removeClass('hide');
+});
+
 })( window );
