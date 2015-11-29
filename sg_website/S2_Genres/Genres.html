@@ -113,19 +113,63 @@ Contact: http://www.bootshape.com/contact.php
 		<br>
 		<div class="graph section">
 			<p></p>
-			<h2 class="text-center">Network Construction and Graph Analysis</h2>
+			<h2 class="text-center">1. Network Construction and Graph Analysis</h2>
 			<p></p>
 			<p><b>Spotify</b> contains more than 1000 genres. We were really interested on how these genres are interconnected between them and if they form communities. As a result, we decided to make a Network that consists of these Genres. Every node of the network is a genre and two genres are connected with an edge if and only if they have more than 20% of artists in common.</p>
 			<p>A static Image of a part of our Graph looks like this:</p>
 			<div><img src="img/spotify_genres_cropped.png" alt="graph img" height="815" width="1100"  /></div>
 			<br>
 			<br>
-			<p>If you want an interactive overview of the graph, click <a href="#"><b>here</b></a></p>
+			<p>If you want a dynamic and interactive overview of the graph, click <a href="#"><b>here</b></a>.</p>
 			<br>
 			<p>We will proceed to the Analysis of our Network</p>
+			<br>
+			<h4><b>Let's explore degree distributions</b></h4>
+			<p>The maximum degree in our network is 21. <br>This means that the most connected genre has 21 connections/edges to other genres.</p>
+			<p><b>Let's take a look at our Network's Degree Distributions:</b></b>
+			<div><img src="img/Linear.png" alt="graph img" height="400" width="600"  /></div>
+			<div><img src="img/Log.png" alt="graph img" height="400" width="600"  /></div>
+			<br>
 		</div>
 		<br>
-		<h2 class="text-center">Evolution of Music Genres Through History</h2>
+		<p>Who are the most interconnected genres? Let's find out by calculating the top 10 highest degree nodes:</p>
+		<p><b>The top 10 genres by degree are:</b><br>
+			jazz christmas<br>
+			permanent wave<br>
+			melancholia<br>
+			memphis blues<br>
+			chicago blues<br>
+			blues<br>
+			alternative rock<br>
+			louisiana blues<br>
+			house<br>
+			traditional blues</p>
+		<p>We can see so many blues sub-genres in there. If one pays attention to the graph too, can really see that blues are a small but tightly connected cluster. That leads us to the conclusion that blues is divided to some small subgenres which in reality are very strongly connected, containing a lot of the same artists.<br>Jazz Christmas and Permanent Wave are also some of the most highly connected Genres that act as Hubs in our Network.<p>
+		<br>
+		<h4><b>Let's explore the Centralities in our Netwrok</b></h4>
+		<p><b>Betweeness Centrality</b><br>The top 5 genres on Spotify by betweenness centrality:<br>
+				indie r &amp b<br>
+				pop rap<br>
+				glam rock<br>
+				permanent wave<br>
+				synthpop<br> </p>
+		<p>The betweenness centrality shows that these genres can always be found on the paths that lead to other genres. They act as "bridges".</p>
+		<br>
+		<p><b>Eigenvector Centrality</b><br>The top 5 genres on Spotify by eigenvector centrality:<br>
+				memphis blues<br>
+				chicago blues<br>
+				blues<br>
+				traditional blues<br>
+				louisiana blues<br></p>
+		<p>Eigenvector centrality is a measure of the influence of a node in a network. It is based on the concept that connections to high-degree nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Hence, 5 most central genres according to eigenvector centrality are the ones connected to most high scoring genres. As we can see these are all blues genres, which leads us to the conclusion that this small community consists of many high degree nodes that are interconnected to each other.</p>
+		<br>
+		<h4><b>Let's investigate the Assortativity of our Netwrok</b></h4>
+		<p><b>Assortativity</b> is a preference for a network's nodes to attach to others that are similar in some way. We will investigate <b>degree assortativity</b>, thus investigate if high degree nodes (genres with many connections to other genres) have a preference to connect to other high degree nodes.</p>
+		<p>The <b>assortativity degree coefficient</b> of our network is <b>0.47</b>. Since it is a positive number, and bigger enough than zero, it proves that our network is in fact assortative with respects to degree.</p>
+		<br>
+		<br>
+		<br>
+		<h2 class="text-center">2. Evolution of Music Genres Through History</h2>
 		<p>Musical genres have changed and evolved through the years. Genres that were popular in the past have faded out and other genres sprouted up and became influencial in the recent years. It is really interesting to track and oversee this path. We collected all the 1000 <b>Spotify</b> genres and combined them to <b>16</b> basic ones, based on <b>Wikipedia's</b> list of main genres.</p>
 		<p></p>
 	  <div class="active years">
