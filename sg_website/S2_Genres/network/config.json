@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Stefanos Marios Chourdakis, Sigga Svala Jonasdottir, Saga Ulfarsdottir",
+    "file": "http://www.dtu.dk/-/media/Udvikling/dtu/logoer/dtulogo_colour.ashx?mh\u003d100\u0026mw\u003d460",
+    "link": ""
+  },
+  "text": {
+    "title": "Social Graphs and Interactions",
+    "more": "Spotify contains more than 1000 genres. We were really interested on how these genres are interconnected between them and if they form communities. As a result, we decided to make a Network that consists of these Genres. Every node of the network is a genre and two genres are connected with an edge if and only if they have more than 20% of artists in common.",
+    "intro": "Network of Spotify Genres"
+  },
+  "legend": {
+    "edgeLabel": "Related Music Genre",
+    "colorLabel": "Music Community",
+    "nodeLabel": "Music Genre"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
