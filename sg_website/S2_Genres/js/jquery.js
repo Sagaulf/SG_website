@@ -8833,4 +8833,10 @@ $('select.div-toggler').change(function(){
     $(show).removeClass('hide');
 });
 
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#element").toggle();
+    });
+});
+
 })( window );
