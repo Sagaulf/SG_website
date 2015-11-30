@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+TEMPLATE
+Name: Zoo Planet
+Version: 1.0
+Created: 23 January 2014
+
+AUTHOR
+Design and code by: http://www.bootshape.com
+Free stock photos by: http://www.bootshape.com
+
+Read full license: http://www.bootshape.com/license.php
+
+CREDITS
+Background: http://subtlepatterns.com/ (extra_clean_paper)
+Fonts: http://www.google.com/fonts (Actor, Duru_Sans)
+
+SUPPORT
+E-mail: bootshape.com@gmail.com
+Contact: http://www.bootshape.com/contact.php
+-->
+<html>
+  <head>
+    <title>Social Graphs and Interactions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
+    
+    <!--Bootshape-->
+    <link href="css/bootshape.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="green">Social Graphs </span> &amp; Interactions</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse navbar-right">
+          <ul class="navbar-nav nav">
+            <li class="active"><a href="../Frontpage/index.html">Home</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" href="#" class="dropdown-toggle">Project Overview<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../S2_Genres/Genres.html">Part 1: Genres</a></li>
+                <li><a href="Artists.html">Part 2: Artists</a></li>
+                <li><a href="../S3_Twitter/Twitter.html">Part 3: Twitter</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- End Navigation bar -->
+
+    <!-- Slide gallery -->
+    <div class="jumbotron">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/carousel/carousel1.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/carousel/carousel2.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/carousel/carousel3.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div><!-- End Slide gallery -->
+    <h1 class="text-center"><big>Artists Analysis</big></h1>
+
+    <!-- Content -->
+    <div class="container">
+		<br>
+		<div class="graph section">
+			<p></p>
+			<h2 class="text-center">1. Network Construction and Graph Analysis</h2>
+			<p></p>
+			<p><b>Spotify</b> contains thousands of Artists. We were really interested on how these artists are related and influence one another. As a result, we acquired data for more than <b>8000</b> Artists and we decided to make a Network that consists of them. Every node of the network is an artist and two artists are connected with an edge based on Spotify's Related Artists attribute.</p>
+			<p>A static Image of a part of our Graph looks like this:</p>
+			<div><img src="img/spotify_genres_cropped.png" alt="graph img" height="815" width="1100"  /></div>
+			<br>
+			<br>
+			<p>If you want a dynamic and interactive overview of the graph, click <a href="network/spotify_network.html"><b>here</b></a>.</p>
+			<br>
+			<p>We will proceed to the Analysis of our Network</p>
+			<br>
+			<h4><b>Let's explore degree distributions</b></h4>
+			<p>The maximum degree in our network is *PUT YOUR NUMBER HERE*. <br>This means that the most connected genre has ** connections/edges to other genres.</p>
+			<p><b>Let's take a look at our Network's Degree Distributions:</b></b>
+			<div><img src="img/Linear.png" alt="graph img" height="400" width="600"  /></div>
+			<div><img src="img/Log.png" alt="graph img" height="400" width="600"  /></div>
+			<br>
+		</div>
+		<br>
+		<p>Who are the most interconnected Artists? Let's find out by calculating the top 10 highest degree nodes:</p>
+		<p><b>The top 10 artists by degree are:</b><br>
+			**Fill YOURS**<br>
+			</p>
+		<p>**Comment on the results**</p>
+		<br>
+		<h4><b>Let's explore the Centralities in our Netwrok</b></h4>
+		<p><b>Betweeness Centrality</b><br>The top 5 artists on Spotify by betweenness centrality:<br>
+				**ADD YOURS**</br>
+		</p>
+		<p>The betweenness centrality shows that these artists can always be found on the paths that lead to other artists. They act as "bridges".</p>
+		<br>
+		<p><b>Eigenvector Centrality</b><br>The top 5 artists on Spotify by eigenvector centrality:<br>
+				**ADD YOURS**</br>
+		</p>
+		<p>Eigenvector centrality is a measure of the influence of a node in a network. It is based on the concept that connections to high-degree nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Hence, 5 most central artists according to eigenvector centrality are the ones connected to most high scoring artists. As we can see  *** Comment on the results*** .</p>
+		<br>
+		<h4><b>Let's investigate the Assortativity of our Netwrok</b></h4>
+		<p><b>Assortativity</b> is a preference for a network's nodes to attach to others that are similar in some way. We will investigate <b>degree assortativity</b>, thus investigate if high degree nodes (artists with many connections to other artists) have a preference to connect to other high degree nodes.</p>
+		<p>The <b>assortativity degree coefficient</b> of our network is <b>***</b>. Since it is a positive number, and bigger enough than zero, it proves that our network is in fact assortative with respects to degree.</p>
+		<br>
+		<br>
+		<br>
+	</div><!-- End Content -->
+    
+	<!-- Footer -->
+    <div class="footer text-center">
+        <p>&copy; 2014 Zoo Planet. All Rights Reserved. Proudly created by <a class="green" href="http://bootshape.com">Bootshape.com</a></p>
+    </div><!-- End Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- // <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootshape.js"></script>
+  </body>
+</html>
