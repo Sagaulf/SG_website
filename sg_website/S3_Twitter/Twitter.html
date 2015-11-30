@@ -1,1 +1,208 @@
-<!DOCKTYPE html>
+<!DOCTYPE html>
+<!--
+TEMPLATE
+Name: Zoo Planet
+Version: 1.0
+Created: 23 January 2014
+
+AUTHOR
+Design and code by: http://www.bootshape.com
+Free stock photos by: http://www.bootshape.com
+
+Read full license: http://www.bootshape.com/license.php
+
+CREDITS
+Background: http://subtlepatterns.com/ (extra_clean_paper)
+Fonts: http://www.google.com/fonts (Actor, Duru_Sans)
+
+SUPPORT
+E-mail: bootshape.com@gmail.com
+Contact: http://www.bootshape.com/contact.php
+-->
+<html>
+  <head>
+    <title>Social Graphs and Interactions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans|Actor' rel='stylesheet' type='text/css'>
+    
+    <!--Bootshape-->
+    <link href="css/bootshape.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="green">Social Graphs </span> &amp; Interactions</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse navbar-right">
+          <ul class="navbar-nav nav">
+            <li class="active"><a href="../Frontpage/index.html">Home</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" href="#" class="dropdown-toggle">Project Overview<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../S2_Genres/Genres.html">Part 1: Genres</a></li>
+                <li><a href="../S1_Artists/Artists.html">Part 2: Artists</a></li>
+                <li><a href="Twitter.html">Part 3: Twitter</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- End Navigation bar -->
+
+    <!-- Slide gallery -->
+    <div class="jumbotron">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/carousel/carousel1.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/carousel/carousel2.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/carousel/carousel3.png" alt="">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div><!-- End Slide gallery -->
+    <h1 class="text-center"><big>Twitter Analysis</big></h1>
+
+    <!-- Content -->
+    <div class="container">
+		<br>
+		<p></p>
+		<p>Well, we have collected data and analyzed more than <b>1000</b> <b>Spotify</b> genres. But, living in the era of Social Media this was not enough. We were intrigued to investigate how users <b>tweet</b> about music. Is there any specific pattern? Are there differences in how users tweet between different music genres? In order to answer our questions, we downloaded and analyzed more than <b>2 million</b> tweets. Feel free to indulge in your curiosity and explore our findings!</p>
+	  	<br>
+		<h2 class="text-center">1. Creating Wordclouds</h2>
+		<p></p>
+	  <div class="wordclouds">
+		<br>
+		<p><b>Wordclouds</b> contain the most frequently used words in the users' tweets. The size of the words changes in proportion to their frequency. </p>
+		<p>Let's look at how users tweet for every genre.</p>
+		<select class="div-toggler" data-target=".cloud-pool">
+		<option value="">Select a Genre...</option>
+		<option value="Rock and Metal" data-show=".rock">Rock and Metal</option>
+		<option value="Pop" data-show=".pop">Pop</option>
+		<option value="Electronic" data-show=".electronic">Electronic</option>
+		<option value="Jazz" data-show=".jazz">Jazz</option>
+		<option value="R&B and Soul" data-show=".rb">R &amp B and Soul</option>
+		<option value="Hip Hop and Rap" data-show=".rap">Hip Hop and Rap</option>
+		<option value="Blues" data-show=".blues">Blues</option>
+		<option value="Folk" data-show=".folk">Folk</option>
+		<option value="Easy Listening" data-show=".easy">Easy Listening</option>
+		<option value="Avantgarde" data-show=".avantgarde">Avantgarde</option>
+		<option value="Country" data-show=".country">Country</option>
+		<option value="Latin" data-show=".latin">Latin</option>
+		<option value="African" data-show=".african">African</option>
+		<option value="Carribean" data-show=".carribean">Carribean</option>
+		<option value="Asian" data-show=".asian">Asian</option>
+		<option value="Comedy" data-show=".comedy">Comedy</option>
+		</select>
+
+		<div class="cloud-pool">
+			<div class="rock hide">
+				<img src="img/Wordclouds/rock and metal.png" alt="Rock Plot" height="550" width="825" />
+			</div>
+			<div class="pop hide">
+				<img src="img/Wordclouds/pop.png" alt="Pop Plot" height="550" width="825" />
+			</div>
+			<div class="electronic hide">
+				<img src="img/Wordclouds/electronic.png" alt="Electronic Plot" height="550" width="825" />
+			</div>
+			<div class="jazz hide">
+				<img src="img/Wordclouds/jazz.png" alt="Jazz Plot" height="550" width="825" />
+			</div>
+			<div class="rb hide">
+				<img src="img/Wordclouds/r&b and soul.png" alt="R&B and Soul Plot" height="550" width="825" />
+			</div>
+			<div class="rap hide">
+				<img src="img/Wordclouds/hip hop and rap.png" alt="Hip Hop and Rap Plot" height="550" width="825" />
+			</div>
+			<div class="blues hide">
+				<img src="img/Wordclouds/blues.png" alt="Blues Plot" height="550" width="825" />
+			</div>
+			<div class="folk hide">
+				<img src="img/Wordclouds/folk.png" alt="Folk Plot" height="550" width="825" />
+			</div>
+			<div class="easy hide">
+				<img src="img/Wordclouds/easy listening.png" alt="Easy Listening Plot" height="550" width="825" />
+			</div>
+			<div class="avantgarde hide">
+				<img src="img/Wordclouds/avantgarde.png" alt="Avantagarde Plot" height="550" width="825" />
+			</div>
+			<div class="country hide">
+				<img src="img/Wordclouds/country.png" alt="Country Plot" height="550" width="825" />
+			</div>
+			<div class="latin hide">
+				<img src="img/Wordclouds/latin.png" alt="Latin Plot" height="550" width="825" />
+			</div>
+			<div class="african hide">
+				<img src="img/Wordclouds/african.png" alt="African Plot" height="550" width="825" />
+			</div>
+			<div class="carribean hide">
+				<img src="img/Wordclouds/carribean.png" alt="Carribean Plot" height="550" width="825" />
+			</div>
+			<div class="asian hide">
+				<img src="img/Wordclouds/asian.png" alt="Asian Plot" height="550" width="825" />
+			</div>
+			<div class="comedy hide">
+				<img src="img/Wordclouds/comedy.png" alt="Comedy Plot" height="550" width="825" />
+			</div>
+	  </div>
+	</div>
+	</div><!-- End Content -->
+    
+	<!-- Footer -->
+    <div class="footer text-center">
+        <p>&copy; 2014 Zoo Planet. All Rights Reserved. Proudly created by <a class="green" href="http://bootshape.com">Bootshape.com</a></p>
+    </div><!-- End Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- // <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootshape.js"></script>
+  </body>
+</html>
