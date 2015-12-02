@@ -120,12 +120,12 @@ Contact: http://www.bootshape.com/contact.php
 			<div><img src="img/connected_artists_cropped.png" alt="graph img" height="815" width="1100"  /></div>
 			<br>
 			<br>
-			<p>If you want a dynamic and interactive overview of the graph, click <a href="network/connected_artists.html"><b>here</b></a>.</p>
+			<p>~To see a dynamic and interactive overview of the graph, click <a href="network/connected_artists.html"><b>here</b></a>.</p>
 			<br>
 			<p>We will proceed to the Analysis of our Network</p>
 			<br>
 			<h4><b>Let's explore degree distributions</b></h4>
-			<p>The maximum degree in our network is *PUT YOUR NUMBER HERE*. <br>This means that the most connected genre has ** connections/edges to other genres.</p>
+			<p>The maximum degree in our network is 74. <br>This means that the most connected artist has 74 connections/edges to other artists.</p>
 			<p><b>Let's take a look at our Network's Degree Distributions:</b></b>
 			<div><img src="img/Linear.png" alt="graph img" height="400" width="600"  /></div>
 			<div><img src="img/Log.png" alt="graph img" height="400" width="600"  /></div>
@@ -134,24 +134,55 @@ Contact: http://www.bootshape.com/contact.php
 		<br>
 		<p>Who are the most interconnected Artists? Let's find out by calculating the top 10 highest degree nodes:</p>
 		<p><b>The top 10 artists by degree are:</b><br>
-			**Fill YOURS**<br>
+			Tiësto<br>
+			Hardwell<br>
+			Afrojack<br>
+			Laidback Luke<br>
+			Axwell<br>
+			Steve Angello<br>
+			John Dahlbäck<br>
+			Kaskade<br>
+			Frank Sinatra<br>
+			Korn 41<br>
 			</p>
-		<p>**Comment on the results**</p>
+		<p>Most of these names are without doubt familiar to techno fans, but all of the artists above, except the last two are techno artists. This can be interpreted in two ways: either the majority of music on Spotify is techno music (unlikely) or techno artists are classified as being more related to each other (more homogenous) than artists from other genres, i.e. most techno artists have many connections and a lot of related artists in common with other techno artists.
+			<br>This means that if you listen to a techno artist on Spotify and want to discover new artists you will most likely end up listening to other techno artists, not discovering a new artist from another genre.
+		</p>
 		<br>
 		<h4><b>Let's explore the Centralities in our Netwrok</b></h4>
 		<p><b>Betweeness Centrality</b><br>The top 5 artists on Spotify by betweenness centrality:<br>
-				**ADD YOURS**</br>
+				David Bowie<br>
+				David Guetta<br>
+				Daft Punk<br>
+				Duran Duran<br>
+				Rihanna<br>
+				Elton John<br>
+				Lynyrd Skynyrd<br>
+				Kid Rock<br>
+				Nicki Minaj<br>
+				Joshua Radin</br>
 		</p>
-		<p>The betweenness centrality shows that these artists can always be found on the paths that lead to other artists. They act as "bridges".</p>
+		<p>The <a href="https://en.wikipedia.org/wiki/Betweenness_centrality">betweenness centrality</a> shows that these artists can always be found on the paths that lead to other artists. They are artists that almost everyone (in the Spotify target audience) has heard of. This list is quite diverse, as the artists act as  "bridges" between artist communities and most of them do not have much in common.
+			<br>We can say that being a fan of the artists in the list above would make the most people on Spotify think you have a good taste in music. So if you want to please/have most in common with everyone then you should start listening to these.
+		</p>
 		<br>
 		<p><b>Eigenvector Centrality</b><br>The top 5 artists on Spotify by eigenvector centrality:<br>
-				**ADD YOURS**</br>
+				Tiësto<br>
+				Hardwell<br>
+				Afrojack<br>
+				Steve Angello<br>
+				John Dahlbäck<br>
+				Kaskade<br>
+				Sebastian Ingrosso<br>
+				Laidback Luke<br>
+				Nicky Romero<br>
+				Swedish House Mafia</br>
 		</p>
-		<p>Eigenvector centrality is a measure of the influence of a node in a network. It is based on the concept that connections to high-degree nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Hence, 5 most central artists according to eigenvector centrality are the ones connected to most high scoring artists. As we can see  *** Comment on the results*** .</p>
+		<p><a href="https://en.wikipedia.org/wiki/Centrality#Eigenvector_centrality">Eigenvector centrality</a> is a measure of the influence of a node in a network. It is based on the concept that connections to high-degree nodes contribute more to the score of the node in question than equal connections to low-scoring nodes. Hence, 10 most central artists according to eigenvector centrality are the ones connected to most high scoring artists. As we can see this list is quite alike the first list, of the most connected artists, again confirming that the community of techno artists is a community of much interconnected artists</p>
 		<br>
 		<h4><b>Let's investigate the Assortativity of our Netwrok</b></h4>
-		<p><b>Assortativity</b> is a preference for a network's nodes to attach to others that are similar in some way. We will investigate <b>degree assortativity</b>, thus investigate if high degree nodes (artists with many connections to other artists) have a preference to connect to other high degree nodes.</p>
-		<p>The <b>assortativity degree coefficient</b> of our network is <b>***</b>. Since it is a positive number, and bigger enough than zero, it proves that our network is in fact assortative with respects to degree.</p>
+		<p><b><a href="https://en.wikipedia.org/wiki/Assortativity">Assortativity</a></b> is a preference for a network's nodes to attach to others that are similar in some way. We will investigate <b>degree assortativity</b>, thus investigate if high degree nodes (artists with many connections to other artists) have a preference to connect to other high degree nodes.</p>
+		<p>The <b>assortativity degree coefficient</b> of our network is <b>-0.2</b>. ince it is a negative number, it proves that our network is not assortative with respects to degree. This means that low-degree artists tend to connect/link to other high degree artists that work as hubs and vice-versa.</p>
 		<br>
 		<br>
 		<br>
@@ -159,7 +190,7 @@ Contact: http://www.bootshape.com/contact.php
     
 	<!-- Footer -->
     <div class="footer text-center">
-        <p>&copy; 2014 Zoo Planet. All Rights Reserved. Proudly created by <a class="green" href="http://bootshape.com">Bootshape.com</a></p>
+        <p>&copy; 2015 DTU, Social Graphs & Interactions and Student Participants. All Rights Reserved. Template created by <a class="green" href="http://bootshape.com">Bootshape.com</a></p>
     </div><!-- End Footer -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
