@@ -8,14 +8,14 @@
     "link": ""
   },
   "text": {
-    "title": "Social Graphs and Interactions",
-    "more": "Spotify contains more than 1000 genres. We were really interested on how these genres are interconnected between them and if they form communities. As a result, we decided to make a Network that consists of these Genres. Every node of the network is a genre and two genres are connected with an edge if and only if they have more than 20% of artists in common.",
-    "intro": "Network of Spotify Genres"
+    "title": "",
+    "more": "A graph of related artists in Spotify.",
+    "intro": "Connected artists in Spotify"
   },
   "legend": {
-    "edgeLabel": "Related Music Genre",
-    "colorLabel": "Music Community",
-    "nodeLabel": "Music Genre"
+    "edgeLabel": "Related Artist",
+    "colorLabel": "Artist Community",
+    "nodeLabel": "Artist"
   },
   "features": {
     "search": true,
