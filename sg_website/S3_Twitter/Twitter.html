@@ -64,7 +64,7 @@ Contact: http://www.bootshape.com/contact.php
                 <li><a href="Twitter.html">Part 3: Twitter</a></li>
               </ul>
             </li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="../About/About.html">About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -114,11 +114,58 @@ Contact: http://www.bootshape.com/contact.php
 		<p></p>
 		<p>Well, we have collected data and analyzed more than <b>1000</b> <b>Spotify</b> genres. But, living in the era of Social Media this was not enough. We were intrigued to investigate how users <b>tweet</b> about music. Is there any specific pattern? Are there differences in how users tweet between different music genres? In order to answer our questions, we downloaded and analyzed more than <b>2 million</b> tweets. Feel free to indulge in your curiosity and explore our findings!</p>
 	  	<br>
-		<h2 class="text-center">1. Creating Wordclouds</h2>
+		<h2 class="text-center">1. Identifying Important Words</h2>
+		<p></p>
+		<div class="tfid">
+			<p>Out of all the tweets we gathered we tried to identify the most important words for each genre (calculated with <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>).</p>
+			<p>Let's look at the 20 Top Tweeted Words from each Genre</p>
+			<select class="div-toggler" data-target=".tfidf-pool">
+			<option value="">Select a Genre...</option>
+			<option value="Rock and Metal" data-show=".rock2">Rock and Metal</option>
+			<option value="Pop" data-show=".pop2">Pop</option>
+			<option value="Electronic" data-show=".electronic2">Electronic</option>
+			<option value="Jazz" data-show=".jazz2">Jazz</option>
+			<option value="R&B and Soul" data-show=".rb2">R &amp B and Soul</option>
+			<option value="Hip Hop and Rap" data-show=".rap2">Hip Hop and Rap</option>
+			<option value="Blues" data-show=".blues2">Blues</option>
+			<option value="Folk" data-show=".folk2">Folk</option>
+			<option value="Easy Listening" data-show=".easy2">Easy Listening</option>
+			<option value="Avantgarde" data-show=".avantgarde2">Avantgarde</option>
+			<option value="Country" data-show=".country2">Country</option>
+			<option value="Latin" data-show=".latin2">Latin</option>
+			<option value="African" data-show=".african2">African</option>
+			<option value="Carribean" data-show=".carribean2">Carribean</option>
+			<option value="Asian" data-show=".asian2">Asian</option>
+			<option value="Comedy" data-show=".comedy2">Comedy</option>
+			</select>
+			
+			<div class="tfidf-pool">
+				<div class="rock2 hide">
+					<p><b>The top 20 words for rock and metal are:</b><br>						redact<br>						candlemas<br>						amicably<br>						gomorrah<br>						refurbish<br>						newsboy<br>						dioxin<br>						refuel<br>						dogmatic<br>						anubis<br>						pursued<br>						fusible<br>						oilseed<br>						phantasma<br>						calendula<br>						serenity<br>						leveller<br>						censorship<br>						celebes<br>						fluorescent<br>					</p>				</div>				<div class="pop2 hide">					<p><b>Top 20 words in pop branch are:</b><br>						catapult<br>					clog<br>					haifa<br>					valenciennes<br>					yearns<br>					backless<br>					robeson<br>					vagrant<br>					cecum<br>					wham<br>					mugger<br>					trapeze<br>					pretender<br>					revolver<br>					crocus<br>					dagame<br>					tamer<br>					have<br>					artifact<br>					molecule<br></p>				</div>				<div class="electronic2 hide">					<p><b>Top 20 words in electronic branch:</b><br>						pegboard<br>					dueller<br>					prometheus<br>					caiman<br>					gazetted<br>					spear<br>					cookware<br>					taffy<br>					cryogenic<br>					gauss<br>					bayonne<br>					lidded<br>					declawed<br>					sash<br>					freemason<br>					fibreglass<br>					marten<br>					treasured<br>					avert<br>					junction<br></p>				</div>				<div class="jazz2 hide">					<p><b>Top 20 words in jazz branch:</b><br>					highlander<br>					hansom<br>					unchain<br>					vicennial<br>					transient<br>					prexy<br>					angelique<br>					krakow<br>					snead<br>					raiser<br>					scruff<br>					chart<br>					scion<br>					soloing<br>					demiurge<br>					compel<br>					pondering<br>					texture<br>					benzine<br>					smokescreen<br></p>				</div>				<div class="rb2 hide">					<p><b>Top 20 words in r&b and soul branch:</b><br>						floe<br>						bayonne<br>					bowerbird<br>					nra<br>					tenderness<br>					vanderbilt<br>					commodore<br>					slaysssss<br>					sauna<br>					induct<br>					privatisation<br>					balboa<br>					overjoyed<br>					brent<br>					snail<br>					reich<br>					watson<br>					alienist<br>					precise<br>					preach<br></p>				</div>				<div class="rap2 hide">					<p><b>Top 20 words in hip hop and rap branch:</b><br>						publicity<br>					highbrow<br>					taffy<br>					hypnotize<br>					kr<br>					newsstand<br>					crosstalk<br>					swart<br>					explication<br>					jook<br>					horned<br>					programmer<br>					tical<br>					nightcrawler<br>					bowerbird<br>					mopped<br>					aerobics<br>					parvis<br>					kuki<br>					monocycle<br></p>				</div>				<div class="blues2 hide">					<p><b>Top 20 words in blues branch:</b><br>					appetizer<br>					columnist<br>					mudslide<br>					elimination<br>					keb<br>					zeppelin<br>					vaughan<br>					hopkins<br>					immersing<br>					crossroad<br>					bumblebee<br>					monochrome<br>					watson<br>					saroyan<br>					gibbon<br>					bland<br>					cler<br>					video<br>					platform<br>					li<br></p>				</div>				<div class="folk2 hide">					<p><b>Top 20 words in folk branch:</b><br>						oilseed<br>						horizontal<br>
+						cecum<br>
+						bowerbird<br>
+						pygmalion<br>
+						mitchell<br>
+						crosby<br>
+						rekindles<br>
+						akron<br>
+						bayesian<br>
+						refinement<br>
+						crafting<br>
+						nash<br>
+						flanders<br>
+						graven<br>
+						amman<br>
+						browne<br>
+						bluebeard<br>
+						pasto<br>
+						severn<br></p>				</div>				<div class="easy2 hide">					<p><b>Top 20 words in easy listening branch:</b><br>					mexicali<br>					con<br>					bolero<br>					man<br>					la<br>					sin<br>					ma<br>					coma<br>					ano<br>					no<br>					dorsal<br>					dia<br>					sen<br>					dolor<br>					video<br>					soda<br>					de<br>					amor<br>					noc<br>					mexico<br></p>						<p>As you can see most are Spanish Words!</p>				</div>				<div class="avantgarde2 hide">					<p><b>Top 20 words in avantgarde branch:</b><br>					twerp<br>					conduct<br>					nicked<br>					barking<br>					pet<br>					regulus<br>					surfer<br>					guided<br>					dog<br>					like<br>					benefit<br>					reading<br>					gym<br>					nosed<br>					blood<br>					cage<br>					dude<br>					dimed<br>					messier<br>					flower<br></p>				</div>				<div class="country2 hide">					<p><b>Top 20 words in country branch:</b><br>					tallahassee<br>					mandolin<br>					commandeering<br>					premise<br>					pollack<br>					keb<br>					riser<br>					overuse<br>					haggard<br>					hopkins<br>					stevens<br>					bluegrass<br>					lonelier<br>					merle<br>					crosby<br>					sandbar<br>					browne<br>					nash<br>					dixieland<br>					deere<br></p>				</div>				<div class="latin2 hide">					<p><b>Top 20 words in latin branch:</b><br>					fulani<br>					niche<br>					anil<br>					mcallen<br>					notorious<br>					plenum<br>					calabash<br>					morph<br>					reservoir<br>					con<br>					calderon<br>					ma<br>					colima<br>					pericles<br>					slot<br>					la<br>					maia<br>					paraguay<br>					no<br>					amor<br></p>				</div>				<div class="african2 hide">					<p><b>Top 20 words in african branch:</b><br>					mewes<br>					lisboa<br>					follow<br>					gain<br>					dynamo<br>					fan<br>					join<br>					club<br>					back<br>					fuse<br>					video<br>					knocking<br>					want<br>					internationally<br>					yummy<br>					flavour<br>					next<br>					ma<br>					follows<br>					prod<br>				</div>				<div class="carribean2 hide">					<p><b>Top 20 words in carribean branch:</b><br>					endangers<br>					octane<br>					wailer<br>					croft<br>					eared<br>					plenum<br>					navigator<br>					maligning<br>					temperature<br>					nacho<br>					permian<br>					smuggling<br>					legalize<br>					rumba<br>					urbana<br>					jacaranda<br>					elisa<br>					bhutan<br>					yankee<br>					soprano<br></p>				</div>				<div class="asian2 hide">					<p><b>Top 20 words in asian branch:</b><br>					supernova<br>					topmost<br>					lotte<br>					generation<br>					acumen<br>					published<br>					adventure<br>					starlight<br>					rudra<br>					jong<br>					ikon<br>					thirst<br>					widen<br>					dragon<br>					girl<br>					comoros<br>					kb<br>					wan<br>					love<br>					weekly<br></p>				</div>				<div class="comedy2 hide">					<p><b>Top 20 words in comedy branch:</b><br>					grossed<br>					beret<br>					izzard<br>					honorary<br>					benne<br>					amish<br>					loosely<br>					proceeds<br>					burnham<br>					bombed<br>					pause<br>					finer<br>					comedian<br>					pray<br>					paris<br>					sadly<br>					like<br>					uninformed<br>					learns<br>					jar<br></p>				</div>			</div>		</div>		<br>
+		<br>
+		<h2 class="text-center">2. Creating Wordclouds</h2>
 		<p></p>
 	  <div class="wordclouds">
 		<br>
-		<p><b>Wordclouds</b> contain the most frequently used words in the users' tweets. The size of the words changes in proportion to their frequency. </p>
+		<p>By using our previous analysis we are going to create <a href="https://en.wikipedia.org/wiki/Tag_cloud"><b>wordclouds</b></a> for every genre. <b>Wordclouds</b> contain the most frequently used words in the users' tweets. The size of the words changes in proportion to their frequency. </p>
 		<p>Let's look at how users tweet for every genre.</p>
 		<select class="div-toggler" data-target=".cloud-pool">
 		<option value="">Select a Genre...</option>
@@ -190,6 +237,22 @@ Contact: http://www.bootshape.com/contact.php
 				<img src="img/Wordclouds/comedy.png" alt="Comedy Plot" height="550" width="825" />
 			</div>
 	  </div>
+	</div>
+	<br>
+	<div class="Happiness">
+		<br>
+		<h2 class="text-center">3. What genre has the happiest Tweets?</h2>
+		<p></p>
+		<br>
+		<p>To obtain the answer to which genre has the happiest Tweets, we implemented a <a href="https://en.wikipedia.org/wiki/Sentiment_analysis">sentiment analysis</a>. It’s a process of determining whether a piece of writing is positive, negative or neutral. 
+			The result, is that, since as you saw above tweets consist mostly of slang and non-legible words, tweets for all genres are more or less neutral. The sentiment score varies from 4.16 - 5.37. Nevertheless, comparing to all the other genres, country, has slightly happiest Tweets compared to other genres.</p>
+		<br><p>Here are the genres listed in descending order of sentiment score, or from what could be considered the ‘happiest’ to the least ‘happy’ genre. :<br>
+				<b>country</b> 5.37147230028<br>				<b>avantgarde</b> 5.24698142761<br>				<b>comedy</b> 5.20536905966<br>				<b>african</b> 5.15057142857<br>				<b>r&b and soul</b> 5.08022767091<br>				<b>pop</b> 5.04314464852<br>				<b>blues</b> 5.0373970576<br>				<b>asian</b> 5.01660756951<br>				<b>hip hop and rap</b> 4.97279342699<br>				<b>electronic</b> 4.97165578601<br>				<b>jazz</b> 4.95357866728<br>				<b>rock and metal</b> 4.89482094219<br>				<b>folk</b> 4.80310522478<br>				<b>carribean</b> 4.71163113006<br>				<b>latin</b> 4.38367372197<br>				<b>easy listening</b> 4.15626122676<br>
+		</p>
+		<br>
+		<br>
+		<h3>Final Comment:</h3>
+		<p> <b>2.27 million</b> tweets were downloaded and then ‘cleaned’ to remove gibberish and meaningless tweets. After cleaning we had <b>2.12 million</b> tweets which were mentioned or hashtag by 2600 distinct artist. We obtained over <b>25000</b> distinct words from these tweets, however only <b>6000</b> (or <b>23%</b>) were actual words. Hence, the analysis would be more concrete if we had a larger dataset to execute on. We estimate that we would need at least <b>25 million</b> tweets to conduct a reliable analysis. So, advice to you people: <i>Make sure to have a very large dataset</i> if you want to do text analysis of tweets.</p>
 	</div>
 	</div><!-- End Content -->
     
