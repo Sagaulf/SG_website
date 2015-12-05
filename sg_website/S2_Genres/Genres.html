@@ -168,6 +168,16 @@ Contact: http://www.bootshape.com/contact.php
 		<p><b><a href="https://en.wikipedia.org/wiki/Assortativity">Assortativity</a></b> is a preference for a network's nodes to attach to others that are similar in some way. We will investigate <b>degree assortativity</b>, thus investigate if high degree nodes (genres with many connections to other genres) have a preference to connect to other high degree nodes.</p>
 		<p>The <b>assortativity degree coefficient</b> of our network is <b>0.47</b>. Since it is a positive number, and bigger enough than zero, it proves that our network is in fact assortative with respects to degree.</p>
 		<br>
+		<h4><b>Let's investigate the Modularity of our Network</b></h4>
+		<br>
+		<p><a href="https://en.wikipedia.org/wiki/Modularity_(networks)">Modularity</a> was designed to measure the strength of division of a network into communities.</p>
+		<p><b>Modularity</b>: 0,852<br><b>Number of Communities</b>: 75</p>
+		<br /><br />
+		<img src="img/communities-size-distribution.png"></img><br /><br />
+		<h4>Comment:</h4>
+		<p>As it can be seen from the data and the plot above our network has a high modularity (>0.8) and can be divided into many communities. If one discards the small communities who contain less than 10 nodes(genres), we can see that we end up with 19 nice communities, something that can also be seen in our interactive network map</p>
+		<br>
+		<h4> Algorithm used: </h4>Vincent D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre, <i>Fast unfolding of communities in large networks</i>, in Journal of Statistical Mechanics: Theory and Experiment 2008 (10), P1000<br>
 		<br>
 		<br>
 		<h2 class="text-center">2. Evolution of Music Genres Through History</h2>
